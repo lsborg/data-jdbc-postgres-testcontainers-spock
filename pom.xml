@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
-  <artifactId>data-jdbc-postgres-testcontainers</artifactId>
+  <artifactId>data-jdbc-postgres-testcontainers-spock</artifactId>
   <version>0.1</version>
   <packaging>${packaging}</packaging>
 
@@ -73,12 +73,12 @@
     </dependency>
     <dependency>
       <groupId>io.micronaut.test</groupId>
-      <artifactId>micronaut-test-junit5</artifactId>
+      <artifactId>micronaut-test-spock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.spockframework</groupId>
-      <artifactId>junit5</artifactId>
+      <artifactId>spock-core</artifactId>
       <scope>test</scope>
       <exclusions>
           <exclusion>
@@ -94,18 +94,13 @@
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
-      <artifactId>junit</artifactId>
+      <artifactId>spock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>jakarta.validation</groupId>
-      <artifactId>jakarta.validation-api</artifactId>
-      <version>3.0.2</version>
     </dependency>
   </dependencies>
   <build>
